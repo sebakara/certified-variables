@@ -11,29 +11,29 @@ if (process.env.NODE_ENV !== "production") {
 
 
 
-// document.getElementById("checkbtn").addEventListener("click", async () =>{
-//   let nowdadata = document.getElementById("checkvalue").value;
-// const gettxt = document.getElementById("getvar");
-// const cid = Principal.fromText(canisterId);
-// // gettxt.innerText = "This Cerficate "+ nowdadata+" was issued by "+cid;
-// let storedArrayString = localStorage.getItem('myArraynew');
-// let storedArray = JSON.parse(storedArrayString);
+document.getElementById("checkbtn").addEventListener("click", async () =>{
+  let nowdadata = document.getElementById("checkvalue").value;
+const gettxt = document.getElementById("getvar");
+const cid = Principal.fromText(canisterId);
+// gettxt.innerText = "This Cerficate "+ nowdadata+" was issued by "+cid;
+let storedArrayString = localStorage.getItem('myArraynew');
+let storedArray = JSON.parse(storedArrayString);
 
-// console.log(storedArray);
-// // let searchValue = 30;
-// // let indexOfValue = myArray.indexOf(nowdadata);
+console.log(storedArray);
+// let searchValue = 30;
+// let indexOfValue = myArray.indexOf(nowdadata);
 
-// let foundElement = storedArray.find(element => element === nowdadata);
-// if (foundElement !== undefined) {  
-//   gettxt.innerText = "This Cerficate "+ nowdadata+" was issued by "+cid;
-// } else {
-//   gettxt.innerText = "This Cerficate "+ nowdadata+" is nowwhere to be found!!!";
-// }
+let foundElement = storedArray.find(element => element === nowdadata);
+if (foundElement !== undefined) {  
+  gettxt.innerText = "This Cerficate "+ nowdadata+" was issued by "+cid;
+} else {
+  gettxt.innerText = "This Cerficate "+ nowdadata+" is nowwhere to be found!!!";
+}
 
-// console.log(storedArray); 
+console.log(storedArray); 
 
-//   // getvar
-// })
+  // getvar
+})
 document.getElementById("setBtn").addEventListener("click", async () => {
 
   let myArray = [10, 20, 30, 40, 50];
